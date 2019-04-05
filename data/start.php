@@ -32,8 +32,7 @@ $ops[2]="insert into bsinfo values(201903001,'测试比赛评分一','".sha1("12
 **++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 $ops[3]="drop table admin_users";
 $ops[4]="create table admin_users(au_id bigint unique,au_acc varchar(100) not null,au_pass varchar(100) not null,au_alias varchar(100) not null,au_tel varchar(12),au_qq varchar(12),au_mail varchar(100),au_birth date,au_bakinfo varchar(1000))";
-$ops[5]="insert into admin_users values(10001,'admin','".sha1("lbj*891021")."','lyclub2016','18562221224','351188949','liubingjie771@live.cn','1989-10-21','')";
-$ops[6]="insert into admin_users values(10002,'liubingjie771','".sha1("lbj*891021")."','lyclub2016','18562221224','351188949','liubingjie771@live.cn','1989-10-21','')";
+$ops[5]="insert into admin_users values(10001,'admin','".sha1("123456")."','lyclub2016','18562221224','351188949','liubingjie771@live.cn','1989-10-21','')";
 //循环执行初始化语句(main主要比赛信息)
 for($i=0;$i<count($ops);$i++)
 {
